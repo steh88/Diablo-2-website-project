@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+      <title>Example navigation bar</title>
+      <style>
+
+/* Styles a horizonal navigation bar */
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  padding: 5px 5px;
+  text-decoration: none;
+  background-color: red;
+  color: black;
+}
+
+.nav li a:hover {
+  background-color: red;
+  color: white;
+}
+
+#active {
+  background-color: red;
+  color: white;
+}
+      </style>
+      </head>
+
+<body>
+
+<ul class="nav">
+  <li><a id="active" href="index.html">Home</a></li>
+  <li><a href="quiz.html">Quiz</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+</ul>
+</body>

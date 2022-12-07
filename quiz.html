@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+      <link rel="stylesheet" type="text/css" href="style.css"> 
+
+</head>
+
+<body>
+  <ul class="nav">
+  <li> <a href="index.html">Home</a></li>
+  <li><a id="active" href="quiz.html">Quiz</a></li>
+  <li><a href="d2gallery.html">Gallery</a></li>
+</ul>
+<br>
+<h1 id="heading"><a onclick='change_heading()'>Diablo 2 Quiz!</a></h1>
+<form name="Quiz">
+Full name: <input type="text" name="fullName" size="60"> 
+<br><br>
+What shall we call you? <input type="text" name="shortName" id="shortName" size="5" onkeyup="say_hello()">
+<br><br>
+  <div id="Welcome">
+    </div>
+<br><br>
+What year was Diablo 2 released?
+<br><br>
+<input type="radio" name="D2Q1" value="Q1Answer1"> 1996 <br>
+<input type="radio" name="D2Q1" value="Q1Answer2"> 2000<br>
+<input type="radio" name="D2Q1" value="Q1Answer3"> 2001<br>
+<br>
+  <p> <a onclick='show_hide()'>Show me a hint</a></p> 
+  <div id="appear" style="display: none">
+    <p>year of the millenium.</p>
+  </div>
+<br><br>
+How many different classes can you play?
+<br><br>
+<input type="radio" name="D2Q2" value="Q2Answer1"> 4 <br>
+<input type="radio" name="D2Q2" value="Q2Answer2"> 5<br>
+<div id="Q2Answer3"><input type="radio" name="D2Q2" value="Q2Answer3"> 6
+</div>
+<br><br><input type="checkbox" oninput="change_colour()">Show me the right answer
+
+<br><br>
+What is the highest level you can reach?
+<input type="number" id="D2Q3" min="85" max="100" step="1">
+
+<br><br>
+How many days (approximately) does it take to complete the last 9 levels
+<input type="number" id="D2Q4" min="5" max="30" step="1">
+<br><br>
+<button onclick="quizCheck()">Finish</button>
+</form>
+
+<br><br>
+<button onclick="image_swop('Diablo-2-Resurrected.jpg')">Diablo 2 Ressurected</button>
+<br>
+<button onclick="image_swop('D2R.jpg')">Diablo 2 Resurrected Alternate</button>
+<br>
+<button onclick="image_swop('Diablo II.jpg')">Diablo 2 Original</button>
+<br>
+<button onclick="image_swop('D2RP.jpg')">Diablo 2 Paladin</button>
+<br>
+<button onclick="image_swop('maxresdefault.jpg')">Diablo 2 Comparrison</button>
+<br>
+<img id="myImage" src="Diablo-2-Resurrected.jpg" style="width: 400px; height:300px">
+
+
+      <script src="script.js"></script>
+</body>
+</html>
